@@ -1,15 +1,15 @@
 import "./App.css";
 
 // import BigTextComponent from "./components/BigTextComponent";
-// import LoginComponent from "./components/LoginComponent";
-import RegisterComponent from "./components/RegisterComponent";
+import LoginComponent from "./components/LoginComponent";
+// import RegisterComponent from "./components/RegisterComponent";
 
 function App() {
   return (
     <div className="container">
       {/* <BigTextComponent /> */}
-      {/* <LoginComponent /> */}
-      <RegisterComponent />
+      <LoginComponent />
+      {/* <RegisterComponent /> */}
     </div>
   );
 }
