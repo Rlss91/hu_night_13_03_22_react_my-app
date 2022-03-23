@@ -1,5 +1,6 @@
 import "./App.css";
 import CardsPanelComponent from "./components/CardsPanelComponent";
+import NavbarComponent from "./components/NavbarComponent";
 
 // import BigTextComponent from "./components/BigTextComponent";
 // import LoginComponent from "./components/LoginComponent";
@@ -8,6 +9,7 @@ import CardsPanelComponent from "./components/CardsPanelComponent";
 function App() {
   return (
     <div className="container">
+      <NavbarComponent />
       {/* <BigTextComponent /> */}
       {/* <LoginComponent /> */}
       {/* <RegisterComponent /> */}
