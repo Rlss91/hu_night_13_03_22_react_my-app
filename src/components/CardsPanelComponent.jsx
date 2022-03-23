@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cloneDeep } from "lodash";
 import CardComponent from "./CardComponent";
 
@@ -10,18 +10,32 @@ const dataArrInitial = [
 ];
 
 const CardsPanelComponent = () => {
+  const [showSpinner, setShowSpinner] = useState(false);
   const [dataArr, setDataArr] = useState(dataArrInitial);
 
+  useEffect(() => {
+    console.log("dataArr changed");
+    setShowSpinner(false);
+  }, [dataArr]);
+
   const handleDeleteCard = (id) => {
-    console.log("from father", id);
-    let newDataArr = cloneDeep(dataArr);
-    newDataArr = newDataArr.filter((item) => {
-      return item.id !== id;
-    });
-    setDataArr(newDataArr);
+    setShowSpinner(true);
+    setTimeout(() => {
+      console.log("from father", id);
+      let newDataArr = cloneDeep(dataArr);
+      newDataArr = newDataArr.filter((item) => {
+        return item.id !== id;
+      });
+      setDataArr(newDataArr);
+    }, 3000);
   };
   return (
     <div>
+      {showSpinner && (
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      )}
       {dataArr.map((item) => {
         return (
           <CardComponent
