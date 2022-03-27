@@ -1,6 +1,7 @@
 import "./App.css";
 import CardsPanelComponent from "./components/CardsPanelComponent";
 import NavbarComponent from "./components/NavbarComponent";
+import TimerWrapperComponent from "./components/TimerWrapperComponent";
 
 // import BigTextComponent from "./components/BigTextComponent";
 // import LoginComponent from "./components/LoginComponent";
@@ -13,7 +14,8 @@ function App() {
       {/* <BigTextComponent /> */}
       {/* <LoginComponent /> */}
       {/* <RegisterComponent /> */}
-      <CardsPanelComponent />
+      {/* <CardsPanelComponent /> */}
+      <TimerWrapperComponent />
     </div>
   );
 }
