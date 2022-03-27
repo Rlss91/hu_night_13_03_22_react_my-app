@@ -14,8 +14,8 @@ function App() {
       {/* <BigTextComponent /> */}
       {/* <LoginComponent /> */}
       {/* <RegisterComponent /> */}
-      {/* <CardsPanelComponent /> */}
-      <TimerWrapperComponent />
+      <CardsPanelComponent />
+      {/* <TimerWrapperComponent /> */}
     </div>
   );
 }
