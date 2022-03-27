@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { cloneDeep } from "lodash";
 import CardComponent from "./CardComponent";
+import SpinnerComponent from "./SpinnerComponent/SpinnerComponent";
 
 const dataArrInitial = [
   { name: "sadfsdfasdf1", desc: "asdfrehserhsrgeargerherth1", id: 1 },
@@ -15,7 +16,7 @@ const CardsPanelComponent = () => {
 
   useEffect(() => {
     console.log("dataArr changed");
-    setShowSpinner(false);
+    setShowSpinner(true);
   }, [dataArr]);
 
   const handleDeleteCard = (id) => {
@@ -31,11 +32,7 @@ const CardsPanelComponent = () => {
   };
   return (
     <div>
-      {showSpinner && (
-        <div className="spinner-border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      )}
+      {showSpinner && <SpinnerComponent />}
       {dataArr.map((item) => {
         return (
           <CardComponent
