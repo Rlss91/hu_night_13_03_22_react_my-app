@@ -1,6 +1,6 @@
 import "./App.css";
 import { ToastContainer } from "react-toastify";
-// import CardsPanelComponent from "./components/CardsPanelComponent";
+import CardsPanelComponent from "./components/CardsPanelComponent";
 import NavbarComponent from "./components/NavbarComponent";
 // import TimerWrapperComponent from "./components/TimerWrapperComponent";
 
@@ -8,7 +8,7 @@ import NavbarComponent from "./components/NavbarComponent";
 // import LoginComponent from "./components/LoginComponent";
 // import RegisterComponent from "./components/RegisterComponent";
 
-import UsersPanelComponent from "./components/UsersPanelComponent";
+// import UsersPanelComponent from "./components/UsersPanelComponent";
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       {/* <BigTextComponent /> */}
       {/* <LoginComponent /> */}
       {/* <RegisterComponent /> */}
-      {/* <CardsPanelComponent /> */}
+      <CardsPanelComponent />
       {/* <TimerWrapperComponent /> */}
-      <UsersPanelComponent />
+      {/* <UsersPanelComponent /> */}
     </div>
   );
 }
