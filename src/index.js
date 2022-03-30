@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 // add bootstrap to react
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+//react-toastify
+import "react-toastify/dist/ReactToastify.css";
 import App from "./App";
 
 ReactDOM.render(
